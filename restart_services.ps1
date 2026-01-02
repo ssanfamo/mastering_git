@@ -1,5 +1,5 @@
 # Auto-generated service restart script
-# Generated: 2025-12-24T11:35:17.523273
+# Generated: 2026-01-02T08:27:55.350141
 
 $ErrorActionPreference = "Stop"
 
