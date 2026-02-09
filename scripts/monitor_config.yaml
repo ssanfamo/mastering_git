@@ -1,0 +1,52 @@
+
+monitoring:
+  interval_minutes: 5
+  critical_services: ['WinRM', 'Dhcp', 'Dnscache', 'EventLog']
+  cpu_threshold: 90
+  memory_threshold: 85
+
+alerting:
+  enabled: false
+  smtp_server: 'smtp.gmail.com'
+  smtp_port: 587
+  email_from: 'your_email@gmail.com'
+  email_to: 'admin@example.com'
+  email_subject: 'System Alert'
+
+export:
+  json_path: 'system_info.json'
+  yaml_path: 'system_info.yaml'
+  auto_export: true
+
+database_path: 'system_metrics.db'
+
+# monitor_config.yaml - Updated version
+monitoring:
+  interval_minutes: 5
+  critical_services: ['WinRM', 'Dhcp', 'Dnscache', 'EventLog']
+  cpu_threshold: 90
+  memory_threshold: 85
+
+alerting:
+  enabled: true
+  smtp_server: 'smtp.gmail.com'
+  smtp_port: 587
+  email_from: 'cirroscodes@gmail.com'
+  email_to: 'admin@example.com'
+  email_subject: 'System Alert'
+
+notifications:  # NEW SECTION
+  slack:
+    enabled: false  # Set to true when ready
+    token: 'xoxb-your-slack-token-here'
+    channel: '#system-alerts'
+  teams:
+    enabled: false  # Set to true when ready
+    webhook: 'https://your-company.webhook.office.com/webhookb2/...'
+
+export:
+  json_path: 'system_info.json'
+  yaml_path: 'system_info.yaml'
+  auto_export: true
+
+database_path: 'system_metrics.db'

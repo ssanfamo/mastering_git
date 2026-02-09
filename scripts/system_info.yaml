@@ -1,0 +1,143 @@
+hardware:
+  cpu_count: 4
+  cpu_percent: 27.0
+  disk_partitions:
+  - device: C:\
+    free_gb: 65.03
+    fstype: NTFS
+    mountpoint: C:\
+    percent_used: 72.7
+    total_gb: 237.77
+    used_gb: 172.74
+  memory_available_gb: 4.32
+  memory_percent: 72.8
+  memory_total_gb: 15.88
+network:
+  interfaces:
+  - addresses:
+    - address: 30-E1-71-7C-E8-26
+      family: '-1'
+      netmask: null
+    - address: 169.254.17.246
+      family: '2'
+      netmask: 255.255.0.0
+    - address: fe80::5e34:208e:b85d:f548
+      family: '23'
+      netmask: null
+    name: Ethernet
+  - addresses:
+    - address: 0A-00-27-00-00-13
+      family: '-1'
+      netmask: null
+    - address: 192.168.56.1
+      family: '2'
+      netmask: 255.255.255.0
+    - address: fe80::b981:3629:54b6:460
+      family: '23'
+      netmask: null
+    name: Ethernet 2
+  - addresses:
+    - address: 34-F3-9A-B7-C8-12
+      family: '-1'
+      netmask: null
+    - address: 169.254.67.135
+      family: '2'
+      netmask: 255.255.0.0
+    - address: fe80::ed38:cfb3:7af8:a824
+      family: '23'
+      netmask: null
+    name: Local Area Connection* 1
+  - addresses:
+    - address: 36-F3-9A-B7-C8-11
+      family: '-1'
+      netmask: null
+    - address: 169.254.2.217
+      family: '2'
+      netmask: 255.255.0.0
+    - address: fe80::cbbd:dd12:a5cc:ac2c
+      family: '23'
+      netmask: null
+    name: Local Area Connection* 2
+  - addresses:
+    - address: 00-FF-79-1B-5F-1C
+      family: '-1'
+      netmask: null
+    - address: 10.102.37.150
+      family: '2'
+      netmask: 255.255.255.252
+    - address: 169.254.100.138
+      family: '2'
+      netmask: 255.255.0.0
+    - address: fe80::68a8:b428:49ae:10ce
+      family: '23'
+      netmask: null
+    name: Ethernet 3
+  - addresses:
+    - address: 34-F3-9A-B7-C8-11
+      family: '-1'
+      netmask: null
+    - address: 192.168.0.100
+      family: '2'
+      netmask: 255.255.255.0
+    - address: fe80::538f:f4f3:824f:47d7
+      family: '23'
+      netmask: null
+    name: Wi-Fi
+  - addresses:
+    - address: 00-15-5D-5B-01-00
+      family: '-1'
+      netmask: null
+    - address: 172.28.32.1
+      family: '2'
+      netmask: 255.255.240.0
+    - address: fe80::584f:6b86:d212:c1b
+      family: '23'
+      netmask: null
+    name: vEthernet (Default Switch)
+  - addresses:
+    - address: 00-15-5D-51-C1-DA
+      family: '-1'
+      netmask: null
+    - address: 172.19.96.1
+      family: '2'
+      netmask: 255.255.240.0
+    - address: fe80::929e:2b33:6987:8951
+      family: '23'
+      netmask: null
+    name: vEthernet (WSL)
+  - addresses:
+    - address: 127.0.0.1
+      family: '2'
+      netmask: 255.0.0.0
+    - address: ::1
+      family: '23'
+      netmask: null
+    name: Loopback Pseudo-Interface 1
+  ip_address: 192.168.56.1
+services:
+  Dhcp:
+    start_mode: Auto
+    started: true
+    status: Running
+  Dnscache:
+    start_mode: Auto
+    started: true
+    status: Running
+  EventLog:
+    start_mode: Auto
+    started: true
+    status: Running
+  WinRM:
+    start_mode: Manual
+    started: false
+    status: Stopped
+system:
+  architecture: 64bit
+  fqdn: DESKTOP-E3RU9PD
+  hostname: DESKTOP-E3RU9PD
+  machine: AMD64
+  os: Windows
+  processor: Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+  release: '10'
+  version: 10.0.22000
+timestamp: '2026-01-04T00:04:58.711458'
